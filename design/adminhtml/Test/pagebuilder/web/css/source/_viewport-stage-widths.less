@@ -1,0 +1,47 @@
+.tablet-viewport {
+    &.pagebuilder-stage-wrapper {
+        &.stage-content-snapshot,
+        &.stage-full-screen {
+            .pagebuilder-stage {
+                .pagebuilder-canvas {
+                    left: 50%;
+                    margin: 0;
+                    transform: translateX(-50%);
+                    width: 1024px;
+                }
+            }
+        }
+    }
+}
+
+.mobile-viewport {
+    &.pagebuilder-stage-wrapper {
+        &.stage-content-snapshot,
+        &.stage-full-screen {
+            .pagebuilder-stage {
+                .pagebuilder-canvas {
+                    left: 50%;
+                    margin: 0;
+                    transform: translateX(-50%);
+                    width: 640px;
+                }
+            }
+        }
+    }
+}
+
+.mobile-small-viewport {
+    &.pagebuilder-stage-wrapper {
+        &.stage-content-snapshot,
+        &.stage-full-screen {
+            .pagebuilder-stage {
+                .pagebuilder-canvas {
+                    left: 50%;
+                    margin: 0;
+                    transform: translateX(-50%);
+                    width: 480px;
+                }
+            }
+        }
+    }
+}

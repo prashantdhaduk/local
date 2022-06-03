@@ -1,0 +1,6 @@
+<?php
+	$products = Mage::getModel('catalog/product')->getCollection();
+	foreach($products as $prod) {
+		$product = Mage::getModel('catalog/product')->load($prod->getId());
+	}
+?>

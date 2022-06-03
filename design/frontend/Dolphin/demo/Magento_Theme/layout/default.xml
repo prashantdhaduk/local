@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <!-- <move element="catalog.topnav" destination="header-wrapper" /> -->
+        <move element="minicart" destination="custom-header-container" after="-"/>
+        <move element="wishlist-link" destination="custom-header-container" />
+
+        <referenceBlock name="customer-account-navigation-orders-link-top" remove="true"/>
+
+
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">header links</argument>
+                </arguments>
+            </block>
+            <container name="custom-header-container" as="custom-header-container" label="Page Custom header Container" htmlTag="div" htmlClass="custom-header-container">
+            </container>
+        </referenceContainer>
+        <referenceBlock name="header.links">
+            <block class="Magento\Framework\View\Element\Template" name="wishlist-link" template="Magento_Theme::html/wishlist.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

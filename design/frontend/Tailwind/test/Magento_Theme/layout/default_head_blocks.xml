@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- <css src="https://use.fontawesome.com/releases/v5.2.0/css/all.css" src_type="url"/> -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" src_type="url" />
+
+
+        <link src="https://cdn.tailwindcss.com" src_type="url" />
+        <script src="https://unpkg.com/tailwindcss-jit-cdn" src_type="url"></script>
+        <!-- <css src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" src_type="url" /> -->
+        <!-- <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" src_type="url" /> -->
+    </head>
+</page>

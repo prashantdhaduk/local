@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Baskerville Regular';
+    src: url('../../fonts/Baskerville/Baskerville.woff2') format('woff2'),
+        url('../../fonts/Baskerville/Baskerville.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// @font-face {
+//     font-family: 'Century Gothic Bold';
+//     src: url('../../fonts/CenturyGothic/CenturyGothic-Bold.woff2') format('woff2'),
+//         url('../../fonts/CenturyGothic/CenturyGothic-Bold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Century Gothic Regular';
+//     src: url('../../fonts/CenturyGothic/CenturyGothic.woff2') format('woff2'),
+//         url('../../fonts/CenturyGothic/CenturyGothic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon/icomoon.eot?4amool');
+  src:  url('../../fonts/icomoon/icomoon.eot?4amool#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon/icomoon.ttf?4amool') format('truetype'),
+    url('../../fonts/icomoon/icomoon.woff?4amool') format('woff'),
+    url('../../fonts/icomoon/icomoon.svg?4amool#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font_family_regular: "Century Gothic Regular";
+@color_white: #ffffff;
+@color_black: #000000;
+@font_family_icon: 'icomoon';
+
+body{
+    font-family: @font_family_regular;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.footer-links-main{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    .footer-row {
+        display: flex;
+        flex: 0 0 60%;
+        .footer-col{
+            width: calc(100% / 3);
+            .footer-content ul {
+                list-style: none;
+                padding: 0;
+                flex: 0 0 50%;
+            }
+        }
+    }
+    .footer-newsletter {
+        flex: 0 0 40%;
+        display: flex;
+        flex-direction: column;
+        .block.newsletter{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

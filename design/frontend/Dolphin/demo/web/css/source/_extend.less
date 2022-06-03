@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?ysdmi7');
+  src:  url('../fonts/icomoon/icomoon.eot?ysdmi7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?ysdmi7') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?ysdmi7') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?ysdmi7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+.sidebar.sidebar-main {
+    padding: 0;
+    .block.filter{
+	    .filter-options{
+		    .filter-options-item {
+			    padding: 15px 0;
+			    border-bottom: 1px solid;
+			    position: relative;
+			    cursor: pointer;
+				.filter-options-title {
+				    margin-bottom: 0;
+				    font-weight: 500;
+					&:after {
+					    content: "\e92c";
+						font-family: icomoon;
+					    position: absolute;
+					    right: 10px;
+					}
+				}
+				.filter-options-content {
+				    margin: 0;
+				    ol.items{
+						.item {
+						    padding: 10px 0 0 0;
+						    a{
+						    	color: #000;
+								span.count {
+								    padding: 0 10px;
+								}
+						    }
+						}
+				    }
+				}
+			}
+			.filter-options-item.allow.active{
+				.filter-options-title{
+					&:after {
+						content: "\e92b";
+						font-family: icomoon;
+					}
+				}
+			}
+	    }
+    }
+	.sidebar.sidebar-additional {
+	    width: 100%;
+	}
+}
+
+/* Header */
+.navigation {
+	background: unset	;
+	text-align: center;
+	.level0 {
+		.submenu {
+			li.parent>a>.ui-menu-icon{
+				&:after{
+				    font-weight: bold;
+				    content: '\e927';
+				    font-family: icomoon;
+				}
+			}
+		}
+	}
+	.level0.parent>.level-top>.ui-menu-icon{
+		&:after{
+			content: '\e92c';
+			font-family: 'icomoon';
+			font-weight: bold;
+			overflow: visible;
+		}
+	}
+}
+
+.block-search {
+	.nested{
+		display: none;
+	}
+}
+
+/*Header*/
+
+.customer-welcome{
+	position: relative;
+}
+
+.customer-welcome .action.switch {
+    background-image: none;
+    background: 0 0;
+    -moz-box-sizing: content-box;
+    border: 0;
+    box-shadow: none;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 400;
+    color: #fff;
+}
+
+.customer-welcome .action.switch>span {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.customer-welcome .action.switch:after{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 22px;
+    color: inherit;
+    content: '\e92c';
+    font-family: 'icomoon';
+    margin: 0;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: 400;
+    overflow: hidden;
+    speak: none;
+    text-align: center;
+    color: #000;
+}
+
+.customer-welcome .customer-menu {
+    display: none;
+}
+
+.customer-welcome.active .customer-menu {
+    display: block;
+}
+
+.customer-welcome .header.links {
+    min-width: 175px;
+    z-index: 1000;
+    text-align: center;
+    li{
+    	padding: 10px 0;
+    	margin: 0;
+    	a{
+    		color: #000;
+    	}
+    }
+    li.item.link.compare{
+    	display: none;
+    }
+}
+
+.customer-welcome ul {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+    background: #fff;
+    border: 1px solid #bbb;
+    margin-top: 4px;
+    min-width: 100%;
+    z-index: 101;
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    box-shadow: ~"0 3px 3px rgb(0 0 0 / 15%)";
+}
+.header.panel>.header.links>.customer-welcome+.authorization-link {
+    display: none;
+}
+.page-header .header.panel{
+    display: flex;
+	align-items: center;
+	.custom-header-container {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: row-reverse;
+	    padding-left: 20px;
+	    li.nav.item{
+	    	list-style: none;
+	    	a{
+	    		color: #000;
+	    	}
+	    }
+	}
+}
+
+
+@media only screen and (max-width: 767px){
+	.navigation .level0.parent>.level-top>.ui-menu-icon:after{
+		content: unset;
+	}
+	span.customer-name{
+		display: none;
+	}
+	.customer-welcome+.authorization-link{
+		display: none;
+	}
+	.customer-welcome .customer-menu{
+		display: block;
+	}
+	.customer-welcome ul{
+		display: block;
+	}
+	.nav-sections .header.links .header.links {
+	    border: 0;
+	    width: 100%;
+	    background: transparent;
+	    box-shadow: none;
+	    text-align: left;
+	    li{
+	    	padding: 0;
+	    }
+	}
+}

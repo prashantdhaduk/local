@@ -1,0 +1,246 @@
+<style type="text/css">
+.page-main {
+    max-width: 100%;
+    padding: 0;
+}
+
+#menu-toggle:checked+#menu {
+    display: block;
+}
+
+</style>
+<section class="bg-gray-100 shadow-md">
+    <header class="lg:px-12 px-8 flex flex-wrap items-center py-4 max-w-screen-2xl mx-auto">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#" class="text-4xl hover:no-underline"><span class="text-black">Magento2 </span></a>
+        </div>
+        <label for="menu-toggle" class="pointer-cursor md:hidden block m-0">
+            <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav class="ease-in-out transition-all duration-300">
+                <ul class="md:flex items-center justify-between text-2xl pt-4 md:pt-0">
+                    <li class="m-0"><a class="md:p-4 py-3 px-0 block hover:no-underline" href="#"><span class="text-black">AboutUs</a></li>
+                    <li class="m-0"><a class="md:p-4 py-3 px-0 block hover:no-underline" href="#"><span class="text-black">Treatments</a></li>
+                    <li class="m-0"><a class="md:p-4 py-3 px-0 block hover:no-underline" href="#"><span class="text-black">Blog</a></li>
+                    <li class="m-0"><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:no-underline" href="#"><span class="text-black">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</section>
+<div>
+    <img src="<?php echo $this->getViewFileUrl('images/Mask Group.jpg'); ?>" alt="img" class="mx-auto" />
+</div>
+<!-- Card List -->
+<div class="bg-gray-100">
+    <div class="container pt-12 pb-16 mx-auto">
+        <div class="text-center mb-20">
+            <h2 class=" text-2xl lg:text-4xl m-0 font-bold">Can My Magento 2 Site Be This Fast ?</h2>
+        </div>
+        <div class="flex flex-wrap gap-x-20 gap-y-20 px-8">
+            <div class="text-center relative rounded-lg bg-white border-2 border-violet-500 md:hover:bg-violet-500 lg:flex-1 fast-que group h-96 w-full">
+                <div class="w-16 h-16 md:w-28 md:h-28 md:mx-auto border-2 border-white rounded-full relative flex p-2 md:p-4 -mt-8 md:-mt-14 -ml-8 md:mx-auto bg-violet-500">
+                    <div class="transform w-full border-2 border-white rounded-full flex items-center justify-center text-2xl md:text-4xl text-white"> 1 </div>
+                </div>
+                <div class="md:py-10">
+                    <p class="font-bold text-base md:text-xl px-8 m-md:pb-5 m-md:-mt-4 md:px-14 md:group-hover:hidden">Is this site built with Magento 2?</p>
+                    <p class="font-bold text-base md:text-xl m-md:py-4 px-6 text-white md:group-hover:block m-md:bg-violet-500">Yes!</p>
+                </div>
+            </div>
+            <div class="text-center relative rounded-lg bg-white border-2 border-red-500 md:hover:bg-red-500 lg:flex-1 fast-que group h-96 w-full">
+                <div class="w-16 h-16 md:w-28 md:h-28 md:mx-auto border-2 border-white rounded-full relative flex p-2 md:p-4 -mt-8 md:-mt-14 -ml-8 md:mx-auto bg-red-500">
+                    <div class="transform w-full border-2 border-white rounded-full flex items-center justify-center text-2xl md:text-4xl text-white"> 2 </div>
+                </div>
+                <div class="md:py-10">
+                    <p class="font-bold text-base md:text-xl px-8 m-md:pb-5 m-md:-mt-4 md:px-14 md:group-hover:hidden">Is this an enterprise-only solution?</p>
+                    <p class="font-bold text-base md:text-xl m-md:py-4 px-6 text-white md:group-hover:block m-md:bg-red-500">No. It’s applicable to all Magento Open Source and Adobe Commerce users.</p>
+                </div>
+            </div>
+            <div class="text-center relative rounded-lg bg-white border-2 border-blue-500 md:hover:bg-blue-500 lg:flex-1 fast-que group h-96 w-full">
+                <div class="w-16 h-16 md:w-28 md:h-28 md:mx-auto border-2 border-white rounded-full relative flex p-2 md:p-4 -mt-8 md:-mt-14 -ml-8 md:mx-auto bg-blue-500">
+                    <div class="transform w-full border-2 border-white rounded-full flex items-center justify-center text-2xl md:text-4xl text-white"> 3 </div>
+                </div>
+                <div class="md:py-10">
+                    <p class="font-bold text-base md:text-xl px-8 m-md:pb-5 m-md:-mt-4 md:px-10 md:group-hover:hidden">Is this running a PWA or some other headless application?</p>
+                    <p class="font-bold text-base md:text-xl m-md:py-4 px-6 text-white md:group-hover:block m-md:bg-blue-500">Nope.</p>
+                </div>
+            </div>
+            <div class="text-center relative rounded-lg bg-white border-2 border-cyan-500 md:hover:bg-cyan-500 lg:flex-1 fast-que group h-96 w-full">
+                <div class="w-16 h-16 md:w-28 md:h-28 md:mx-auto border-2 border-white rounded-full relative flex p-2 md:p-4 -mt-8 md:-mt-14 -ml-8 md:mx-auto bg-cyan-500">
+                    <div class="transform w-full border-2 border-white rounded-full flex items-center justify-center text-2xl md:text-4xl text-white"> 4 </div>
+                </div>
+                <div class="md:py-10">
+                    <p class="font-bold text-base md:text-xl px-8 m-md:pb-5 m-md:-mt-4 md:px-4 md:group-hover:hidden">Have we completely rewritten the core?</p>
+                    <p class="font-bold text-base md:text-xl m-md:py-4 px-6 text-white md:group-hover:block m-md:bg-cyan-500">Not a chance.</p>
+                </div>
+            </div>
+            <div class="text-center relative rounded-lg bg-white border-2 border-lime-400 md:hover:bg-lime-400 lg:flex-1 fast-que group h-96 w-full">
+                <div class="w-16 h-16 md:w-28 md:h-28 md:mx-auto border-2 border-white rounded-full relative flex p-2 md:p-4 -mt-8 md:-mt-14 -ml-8 md:mx-auto bg-lime-400">
+                    <div class="transform w-full border-2 border-white rounded-full flex items-center justify-center text-2xl md:text-4xl text-white"> 5 </div>
+                </div>
+                <div class="md:py-10">
+                    <p class="font-bold text-base md:text-xl px-8 m-md:pb-5 m-md:-mt-4 md:px-14 md:group-hover:hidden">Did it take a long time to implement?</p>
+                    <p class="font-bold text-base md:text-xl m-md:py-4 px-4 text-white md:group-hover:block m-md:bg-lime-400">Not unless you consider a few hours a long time, but re-theming a larger site can take longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product list -->
+<div class="bg-white max-w-screen-2xl mx-auto">
+    <div class="px-4 py-20 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 text-center my-10">Customers also purchased</h2>
+        <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+            <div class="group relative">
+                <div class="w-full bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75">
+                    <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                </div>
+                <div class="mt-4 flex justify-between">
+                    <div>
+                        <h3 class="text-3xl text-gray-700">
+                            <a href="#">
+                                <span aria-hidden="true" class="text-black font-bold">Basic Tee</span>
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-2xl text-gray-500">Black</p>
+                    </div>
+                    <p class="text-2xl font-medium text-gray-900">$35</p>
+                </div>
+            </div>
+            <div class="group relative">
+                <div class="w-full bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75">
+                    <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                </div>
+                <div class="mt-4 flex justify-between">
+                    <div>
+                        <h3 class="text-3xl text-gray-700">
+                            <a href="#">
+                                <span aria-hidden="true" class="text-black font-bold">Basic Tee</span>
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-2xl text-gray-500">Black</p>
+                    </div>
+                    <p class="text-2xl font-medium text-gray-900">$35</p>
+                </div>
+            </div>
+            <div class="group relative">
+                <div class="w-full bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75">
+                    <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                </div>
+                <div class="mt-4 flex justify-between">
+                    <div>
+                        <h3 class="text-3xl text-gray-700">
+                            <a href="#">
+                                <span aria-hidden="true" class="text-black font-bold">Basic Tee</span>
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-2xl text-gray-500">Black</p>
+                    </div>
+                    <p class="text-2xl font-medium text-gray-900">$35</p>
+                </div>
+            </div>
+            <div class="group relative">
+                <div class="w-full bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75">
+                    <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                </div>
+                <div class="mt-4 flex justify-between">
+                    <div>
+                        <h3 class="text-3xl text-gray-700">
+                            <a href="#">
+                                <span aria-hidden="true" class="text-black font-bold">Basic Tee</span>
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-2xl text-gray-500">Black</p>
+                    </div>
+                    <p class="text-2xl font-medium text-gray-900">$35</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="relative">
+    <div>
+        <img src="<?php //echo $this->getViewFileUrl('images/video-bg.jpg'); ?>" alt="img" />
+    </div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-2/4 -translate-y-1/4">
+        <a href=""><img class="mx-auto" src="<?php //echo $this->getViewFileUrl('images/video-icon.png'); ?>" alt="video-btn"></a>
+        <p>See Our Core Web Vitals Scores And Compare To Your Own</p>
+    </div>
+</div>
+ -->
+<!-- Image gallery -->
+<div class="bg-white max-w-screen-2xl mx-auto">
+    <div>
+        <div class="mt-6 mx-auto lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div class="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg" alt="Two each of gray, white, and black shirts laying flat." class="w-full h-full object-center object-cover">
+            </div>
+            <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
+                <div class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
+                    <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg" alt="Model wearing plain black basic tee." class="w-full h-full object-center object-cover">
+                </div>
+                <div class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
+                    <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg" alt="Model wearing plain gray basic tee." class="w-full h-full object-center object-cover">
+                </div>
+            </div>
+            <div class="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg" alt="Model wearing plain white basic tee." class="w-full h-full object-center object-cover">
+            </div>
+        </div>
+        <!-- Product info -->
+        <div class="mx-auto pt-16 pb-2">
+            <div class="lg:col-span-2 lg:pr-8">
+                <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Basic Tee 6-Pack</h1>
+            </div>
+        </div>
+        <div class="">
+            <!-- Description and details -->
+            <div>
+                <h3 class="sr-only">Description</h3>
+                <div class="space-y-6 mt-4">
+                    <p class="text-2xl text-gray-900">The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: &quot;Black&quot;. Need to add an extra pop of color to your outfit? Our white tee has you covered.</p>
+                </div>
+            </div>
+            <div class="mt-10">
+                <h3 class="text-3xl font-bold text-gray-900">Highlights</h3>
+                <div class="mt-4">
+                    <ul role="list" class="pl-8 list-disc text-2xl space-y-2">
+                        <li class="text-gray-400"><span class="text-gray-600">Hand cut and sewn locally</span></li>
+                        <li class="text-gray-400"><span class="text-gray-600">Dyed with our proprietary colors</span></li>
+                        <li class="text-gray-400"><span class="text-gray-600">Pre-washed &amp; pre-shrunk</span></li>
+                        <li class="text-gray-400"><span class="text-gray-600">Ultra-soft 100% cotton</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-10">
+                <h2 class="text-3xl font-bold text-gray-900">Details</h2>
+                <div class="mt-4 space-y-6">
+                    <p class="text-2xl text-gray-600">The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming &quot;Charcoal Gray&quot; limited release.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Promo section -->
+<div class="relative bg-white overflow-hidden max-w-screen-2xl mx-auto">
+    <div class="py-32 text-center">
+        <div class="relative mx-auto px-4 sm:px-6 lg:px-8 sm:static">
+            <div class="max-w-screen-lg mx-auto">
+                <h1 class="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">Summer styles are finally here</h1>
+                <p class="mt-8 text-2xl text-gray-500">This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care if you live or die.</p>
+            </div>
+            <div>
+                <div class="mt-10">
+                    <!-- Decorative image grid -->
+                    <a href="#" class="inline-block text-center bg-black border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-black">
+                        <span class="text-white">Shop Collection</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
